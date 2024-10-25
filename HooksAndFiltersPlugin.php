@@ -29,6 +29,7 @@ class HooksAndFiltersPlugin extends Omeka_Plugin_AbstractPlugin
     public function hookPublicBody($args)
     {
         echo "<div align=center>PUBLIC BODY ADDITIONS!!</div>";
+        d($this);
     }
 
     public function filterPublicNavigationMain($navArray)
