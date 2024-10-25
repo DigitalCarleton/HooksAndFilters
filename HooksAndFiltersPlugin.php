@@ -34,6 +34,10 @@ class HooksAndFiltersPlugin extends Omeka_Plugin_AbstractPlugin
     public function filterPublicNavigationMain($navArray)
     {
         $navArray['Example'] = array('label' => 'Example', 'uri'=>'http://example.com');
+        $navArray['Thingy'] = array(
+            'label' => __('Thingy'),
+            'uri' => url('controllers-and-views/whatnot/thingy')
+        );
         return $navArray;
     }
 }
